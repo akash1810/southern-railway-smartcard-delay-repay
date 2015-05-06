@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "southern railway smartcard delay repay",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "a friendly delay repay experience for southern railway smartcard users",
+    "description": "The description of the application"
+  }
+}
