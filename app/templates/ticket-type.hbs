@@ -1,0 +1,6 @@
+<select id="ticket_type_{{index}}" name="ticket_type_{{index}}">
+    <option selected disabled>Select...</option>
+    {{#each options}}
+        <option value="{{this.value}}">{{this.text}}</option>
+    {{/each}}
+</select>

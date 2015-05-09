@@ -1,7 +1,6 @@
 # southern railway smartcard delay repay
 
-## Why?
-Because the Southern Railway Delay Repay form is awful if you hold a smartcard.
+The Southern Railway Delay Repay form is awful, especially if you hold a smartcard.
 Just [look at it](https://www.southernrailway.com/your-journey/customer-services/delay-repay/delay-repay-form)!
 
 * What's with all the red text everywhere?!
@@ -12,5 +11,20 @@ Inspired by [@rem](https://twitter.com/rem/status/592333171578032128) this chrom
 ## Southern's Form
 ![default form](./southern-form.png)
 
-## What the chrome extension does.
-coming soon...
+## What the chrome extension does:
+This extension cleans the form up to look like this:
+
+![clean form](./clean.png)
+
+In an overview, the following actions are performed:
+  * Narrows down `Ticket Type` by removing options unrelated to the smartcard.
+  * Fields that are not relevant are hidden. These include:
+    - `Photocard ID`
+    - `Reason for delay`
+    - `Upload scanned copy`
+    - `I have previously`
+  * The `Details of delay` field is changed from a `textarea` to an `input` of type number and of length X. It is also moved further up the page and renamed.
+  * `Photocard ID` is auto filled from `Details of delay`.
+  * The copy is also trimmed down to remove the verbose warnings/information.
+  
+The payload of the `POST` request remains unchanged so the form operates as before.

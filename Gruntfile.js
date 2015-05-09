@@ -53,6 +53,13 @@ module.exports = function (grunt) {
           livereload: '<%= connect.options.livereload %>'
         }
       },
+      templates: {
+        files: ['<%= config.app %>/templates/{,*/}*.hbs'],
+        tasks: [],
+        options: {
+          livereload: '<%= connect.options.livereload %>'
+        }
+      },
       livereload: {
         options: {
           livereload: '<%= connect.options.livereload %>'
