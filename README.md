@@ -8,6 +8,11 @@ Just [look at it](https://www.southernrailway.com/your-journey/customer-services
  
 Inspired by [@rem](https://twitter.com/rem/status/592333171578032128) this chrome extension will make this form simpler for smartcard holders.
 
+## Usage
+I don't want to pay the $5 fee for hosting this extension in the Chrome Store just yet.
+To use this extension, download the latest release [from here](https://github.com/akash1810/southern-railway-smartcard-delay-repay/releases), 
+unzip it then load it as an [unpacked extension](https://developer.chrome.com/extensions/getstarted#unpacked).
+
 ## Southern's Form
 ![default form](./southern-form.png)
 
@@ -28,3 +33,9 @@ In an overview, the following actions are performed:
   * The copy is also trimmed down to remove the verbose warnings/information.
   
 The payload of the `POST` request remains unchanged so the form operates as before.
+
+## Contributing
+This extension was scaffolded using the [yeoman generator](https://github.com/yeoman/generator-chrome-extension) and as such has handy grunt tasks!
+
+Checkout this repository, then run `npm install` and `bower install` to install the dependencies. Load the unpacked extension, then run `grunt debug` to 
+live reload your changes.
