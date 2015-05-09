@@ -6,6 +6,8 @@ Just [look at it](https://www.southernrailway.com/your-journey/customer-services
 * What's with all the red text everywhere?!
 * Why isn't there a separate form for smartcard holders, rather than mashing the two forms together?!
  
+See [this](./justification/README.md) for a full explanation on why this form is so painful.
+ 
 Inspired by [@rem](https://twitter.com/rem/status/592333171578032128) this chrome extension will make this form simpler for smartcard holders.
 
 ## Usage
