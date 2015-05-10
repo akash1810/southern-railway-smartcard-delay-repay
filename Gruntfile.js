@@ -285,6 +285,7 @@ module.exports = function (grunt) {
             'styles/{,*/}*.css',
             'styles/fonts/{,*/}*.*',
             '_locales/{,*/}*.json',
+            'templates/{,*/}*.hbs'
           ]
         }]
       }
@@ -329,7 +330,7 @@ module.exports = function (grunt) {
         options: {
           archive: function() {
             var manifest = grunt.file.readJSON('app/manifest.json');
-            return 'package/southern railway smartcard delay repay-' + manifest.version + '.zip';
+            return 'package/southern-railway-smartcard-delay-repay-' + manifest.version + '.zip';
           }
         },
         files: [{
